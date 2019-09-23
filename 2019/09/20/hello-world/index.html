@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Welcome to 庄的小站！本来想借助别人的模板直接上天，看来还是要慢慢来。 我的第一篇博客快速写文章创建一篇新文章1$hexo new &quot;hello-world&quot;  服务1$hexo s   s(server)  更多的信息可见：服务 产生静态文件1$hexo g  更多的信息可见： 产生 部署到遠程站點1$ hexo d   d(deploy):部署  更多的信息可见：Deployment">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-22T07:08:28.077Z">
+<meta property="og:updated_time" content="2019-09-23T12:41:03.151Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="fighterzzh">
 <meta name="twitter:description" content="Welcome to 庄的小站！本来想借助别人的模板直接上天，看来还是要慢慢来。 我的第一篇博客快速写文章创建一篇新文章1$hexo new &quot;hello-world&quot;  服务1$hexo s   s(server)  更多的信息可见：服务 产生静态文件1$hexo g  更多的信息可见： 产生 部署到遠程站點1$ hexo d   d(deploy):部署  更多的信息可见：Deployment">
@@ -104,11 +104,25 @@
 <p>d(deploy):部署</p>
 </blockquote>
 <p>更多的信息可见：<a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="关于图片插入"><a href="#关于图片插入" class="headerlink" title="关于图片插入"></a>关于图片插入</h3><p>将根目录下的_config.yml修改属下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
+
+<p>一开始在根目录下安装一个更改目录的插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<p>然后创建文件夹的时候source/_posts文件夹下会相应生成一个存放图片的目录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![文件名](/博客名/图片名.png)</span><br></pre></td></tr></table></figure>
+
+<p>然后使用MarkDow语言即可使用。然而这对我并没有生效。</p>
+<p>我最后采取的方法：</p>
+<p>1.把图片放在上述的同名文件夹下</p>
+<p>2.上传至[图床]<a href="https://sm.ms/" target="_blank" rel="noopener">https://sm.ms/</a></p>
+<p>3.直接复制粘贴markdown语言即可。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/fighterzzzh/fighterzzzh.github.io/2019/09/20/hello-world/" data-id="ck0we1kbe00003cowg8lmgnpo" class="article-share-link">Share</a>
+      <a data-url="https://github.com/fighterzzzh/fighterzzzh.github.io/2019/09/20/hello-world/" data-id="ck0wegixj0000g4owkuvzkuib" class="article-share-link">Share</a>
       
       
     </footer>
